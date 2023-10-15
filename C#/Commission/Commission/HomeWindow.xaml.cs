@@ -15,22 +15,48 @@ using System.Windows.Shapes;
 
 namespace Commission
 {
+    /// <summary>
+    /// Главная страница
+    /// </summary>
     public partial class HomeWindow : Window
     {
+        /// <summary>
+        /// Конструктор главной страницы
+        /// </summary>
         public HomeWindow()
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Кнопка выхода к окну авторизации
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Exit_btn(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             Close();
         }
+        /// <summary>
+        /// Открытие файла-справки
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void Info_btn(object sender, RoutedEventArgs e)
         {
             MessageBox.Show(File.ReadAllText(System.Environment.CurrentDirectory + "/Info.txt"));
+        }
+
+        /// <summary>
+        /// Событие при загрузке главной страницы
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void GetData(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

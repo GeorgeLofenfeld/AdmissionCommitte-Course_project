@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Commission"
         mc:Ignorable="d"
-        Title="Главная" Height="640" Width="960" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Главная" Height="640" Width="960" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="GetData">
     <Grid>
         <Button Content="Выход" HorizontalAlignment="Left" Margin="857,544,0,0" VerticalAlignment="Top" Click="Exit_btn" Height="40" Width="83"/>
         <Button Content="Справка" HorizontalAlignment="Left" Margin="821,85,0,0" VerticalAlignment="Top" Click="Info_btn" Height="40" Width="119"/>
