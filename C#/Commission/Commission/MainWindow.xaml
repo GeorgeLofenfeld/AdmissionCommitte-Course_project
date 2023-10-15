@@ -1,0 +1,20 @@
+﻿<Window x:Class="Commission.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Commission"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="640" Width="960" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Height="640" Width="960" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Button Content="Войти" HorizontalAlignment="Center" Margin="0,345,0,0" VerticalAlignment="Top" Width="160" Height="40" Click="Auth_btn"/>
+        <PasswordBox x:Name="textbox_password" HorizontalAlignment="Center" Margin="0,305,0,0" VerticalAlignment="Top" Width="160" Password="adm_123"/>
+        <Label Content="Пароль" HorizontalAlignment="Center" Margin="0,265,0,0" VerticalAlignment="Top" Width="160" Height="40"/>
+        <TextBox x:Name="textbox_login" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="20" Background="White" Margin="0,225,0,0" Text="Admin"/>
+        <Label Content="Логин" HorizontalAlignment="Center" Margin="0,185,0,0" VerticalAlignment="Top" Width="160" Height="40"/>
+        <Label Content="(c) 2023 Created by GeorgeL." HorizontalAlignment="Left" Margin="20,565,0,0" VerticalAlignment="Top" Width="220" Height="40"/>
+        <Label Content="Version 1.0, last update 14.10.2023" HorizontalAlignment="Left" Margin="730,565,0,0" VerticalAlignment="Top" Width="220" Height="40"/>
+        <Image HorizontalAlignment="Left" Height="92" Margin="26,33,0,0" VerticalAlignment="Top" Width="79" Source="MGUTU.jpg"/>
+        <Label Content="Приёмная комиссия" HorizontalAlignment="Center" Margin="0,63,0,0" VerticalAlignment="Top" Width="320" FontSize="33" Height="77"/>
+    </Grid>
+</Window>
