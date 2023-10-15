@@ -9,10 +9,19 @@ using System.Windows.Controls;
 
 namespace Commission
 {
+    /// <summary>
+    /// Класс необходимый для процесса авторизации пользователя
+    /// </summary>
     internal class Authorization
     {
-        public bool Auth(string login, string password) 
-        {
+        /// <summary>
+        /// Метод авторизации
+        /// </summary>
+        /// <param name="login">Введённый логин в textbox в окне авторизации</param>
+        /// <param name="password">Введённый пароль в textbox в окне авторизации</param>
+        /// <returns>Флаг успешности авторизации</returns>
+        public bool Auth(string login, string password)
+        { 
             DataBase db = new();
             SqlCommand command_1 = new SqlCommand("SELECT * FROM Employees", db.connection);
             SqlDataReader reader_1 = command_1.ExecuteReader();

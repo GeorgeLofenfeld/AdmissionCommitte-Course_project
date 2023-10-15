@@ -5,46 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Commission"
         mc:Ignorable="d"
-        Title="Главная" Height="640" Width="960" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="GetData">
+        Title="Главная" Height="640" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="GetData">
     <Grid>
         <Button Content="Выход" HorizontalAlignment="Left" Margin="857,544,0,0" VerticalAlignment="Top" Click="Exit_btn" Height="40" Width="83"/>
-        <Button Content="Справка" HorizontalAlignment="Left" Margin="821,85,0,0" VerticalAlignment="Top" Click="Info_btn" Height="40" Width="119"/>
-        <DataGrid IsReadOnly="True" x:Name="HomeDataGrid" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserReorderColumns="False" CanUserSortColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" Margin="0,144,0,85" AutoGenerateColumns="False">
+        <Button Content="Справка" HorizontalAlignment="Left" Margin="680,84,0,0" VerticalAlignment="Top" Click="Info_btn" Height="40" Width="119"/>
+        <DataGrid IsReadOnly="True" x:Name="HomeDataGrid" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserReorderColumns="False" CanUserSortColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" Margin="5,144,5,85" AutoGenerateColumns="False" IsSynchronizedWithCurrentItem="True" SelectionMode="Single" SelectionUnit="Cell">
             <DataGrid.Columns>
                 <DataGridTextColumn 
                     Header="№" 
-                    IsReadOnly="True" Width="40"/>
+                    IsReadOnly="True" Width="40" Binding="{Binding Path = number}"/>
                 <DataGridTextColumn 
                     Header="Фамилия" 
-                    IsReadOnly="True" Width="115"/>
+                    IsReadOnly="True" Width="115" Binding="{Binding Path = lastName}"/>
                 <DataGridTextColumn 
                     Header="Имя" 
-                    IsReadOnly="True" Width="115"/>
+                    IsReadOnly="True" Width="115" Binding="{Binding Path = firstName}"/>
                 <DataGridTextColumn 
                     Header="Отчество" 
-                    IsReadOnly="True" Width="115"/>
+                    IsReadOnly="True" Width="115" Binding="{Binding Path = middleName}"/>
                 <DataGridTextColumn 
                     Header="Дата рождения" 
-                    IsReadOnly="True" Width="106"/>
+                    IsReadOnly="True" Width="106" Binding="{Binding Path = dateOfBirth}"/>
                 <DataGridTextColumn 
                     Header="Код специальности" 
-                    IsReadOnly="True" Width="117"/>
+                    IsReadOnly="True" Width="117" Binding="{Binding Path = specialtyCode}"/>
                 <DataGridTextColumn 
                     Header="Средний балл" 
-                    IsReadOnly="True" Width="90"/>
+                    IsReadOnly="True" Width="90" Binding="{Binding Path = averageScore}"/>
                 <DataGridTextColumn 
                     Header="Дата подачи заявления" 
-                    IsReadOnly="True" Width="140"/>
+                    IsReadOnly="True" Width="140" Binding="{Binding Path = dateOfStatement}"/>
                 <DataGridTextColumn 
                     Header="Номер заявления" 
-                    IsReadOnly="True" Width="106"/>
+                    IsReadOnly="True" Width="106" Binding="{Binding Path = numberOfStatement}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Обновить таблицу" HorizontalAlignment="Left" Margin="680,84,0,0" VerticalAlignment="Top" Height="40" Width="118"/>
         <Button Content="Сохранить отчёт" HorizontalAlignment="Left" Margin="680,24,0,0" VerticalAlignment="Top" Height="40" Width="118"/>
         <Button Content="Проходной балл, количество мест" HorizontalAlignment="Left" Margin="420,24,0,0" VerticalAlignment="Top" Height="40" Width="240"/>
         <Button Content="Просмотр, редактирование, удаление" HorizontalAlignment="Left" Margin="160,24,0,0" VerticalAlignment="Top" Height="40" Width="240"/>
-        <Button Content="Добавить заявление" HorizontalAlignment="Left" Margin="20,24,0,0" VerticalAlignment="Top" Height="40" Width="118"/>
+        <Button Content="Добавить заявление" HorizontalAlignment="Left" Margin="20,24,0,0" VerticalAlignment="Top" Height="40" Width="118" Click="OpenAddingAStatement"/>
         <Label Content="Фильтр:&#xD;&#xA;" HorizontalAlignment="Left" Margin="15,99,0,0" VerticalAlignment="Top" Height="25" Width="59"/>
         <ComboBox SelectedIndex="0" HorizontalAlignment="Left" Margin="79,103,0,0" VerticalAlignment="Top" Width="120">
             <TextBlock Text="Любая"></TextBlock>
@@ -59,6 +58,6 @@
         <Label Content="Год поступления:" HorizontalAlignment="Left" Margin="220,77,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Средний балл:" HorizontalAlignment="Left" Margin="360,78,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="(с) 2023 Created by GeorgeL." HorizontalAlignment="Left" Margin="20,558,0,0" VerticalAlignment="Top" Width="179"/>
-        <Image HorizontalAlignment="Left" Height="64" Margin="852,13,0,0" VerticalAlignment="Top" Width="56" Source="MGUTU.jpg"/>
+        <Image HorizontalAlignment="Left" Height="102" Margin="835,24,0,0" VerticalAlignment="Top" Width="90" Source="MGUTU.jpg"/>
     </Grid>
 </Window>

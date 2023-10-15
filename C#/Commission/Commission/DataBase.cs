@@ -8,9 +8,18 @@ using System.Windows;
 
 namespace Commission
 {
+    /// <summary>
+    /// Класс необходимый для создания соединения с БД
+    /// </summary>
     public class DataBase
     {
+        /// <summary>
+        /// Свойство подключения
+        /// </summary>
         public SqlConnection connection = new SqlConnection("Data Source = localhost\\SQLEXPRESS01;\nInitial Catalog = Commission;\nIntegrated Security = true\n");
+        /// <summary>
+        /// Конструктор класса, открывающий  подключение
+        /// </summary>
         public DataBase()
         {
             try

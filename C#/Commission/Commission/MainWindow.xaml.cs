@@ -23,7 +23,11 @@ namespace Commission
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Реакция на кнопку входа в аккаунт. При успешности - открывает главное окно
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void Auth_btn(object sender, RoutedEventArgs e)
         {
             Authorization auth = new Authorization();
