@@ -19,7 +19,7 @@ namespace Commission
         public string? dateOfBirth { get; set; }
         public string? specialtyCode { get; set; }
         public double averageScore { get; set; }
-        public int dateOfStatement { get; set; }
+        public string? dateOfStatement { get; set; }
         public int numberOfStatement { get; set; }
     }
 }

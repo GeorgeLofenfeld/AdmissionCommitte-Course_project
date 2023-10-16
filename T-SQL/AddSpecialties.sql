@@ -1,7 +1,7 @@
 USE Commission
 GO
 INSERT INTO dbo.Specialties VALUES
-('09.02.07', 50, 50),
-('09.03.07', 50, 50)
+('09.02.03', 5, 10),
+('09.02.07', 7, 15)
 
 

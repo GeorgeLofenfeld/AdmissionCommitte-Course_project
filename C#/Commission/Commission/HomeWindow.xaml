@@ -45,19 +45,15 @@
         <Button Content="Просмотр, редактирование, удаление" HorizontalAlignment="Left" Margin="160,24,0,0" VerticalAlignment="Top" Height="40" Width="240"/>
         <Button Content="Добавить заявление" HorizontalAlignment="Left" Margin="20,24,0,0" VerticalAlignment="Top" Height="40" Width="118" Click="OpenAddingAStatement"/>
         <Label Content="Фильтр:&#xD;&#xA;" HorizontalAlignment="Left" Margin="15,99,0,0" VerticalAlignment="Top" Height="25" Width="59"/>
-        <ComboBox SelectedIndex="0" HorizontalAlignment="Left" Margin="79,103,0,0" VerticalAlignment="Top" Width="120">
-            <TextBlock Text="Любая"></TextBlock>
-        </ComboBox>
-        <ComboBox SelectedIndex="0" HorizontalAlignment="Left" Margin="220,103,0,0" VerticalAlignment="Top" Width="120">
-            <TextBlock Text="Любой"></TextBlock>
-        </ComboBox>
         <CheckBox IsChecked="True" Content="Бюджет" HorizontalAlignment="Left" Margin="500,106,0,0" VerticalAlignment="Top"/>
         <CheckBox IsChecked="True" Content="Внебюджет" HorizontalAlignment="Left" Margin="582,106,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="360,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21"/>
         <Label Content="Специальность:" HorizontalAlignment="Left" Margin="79,77,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Год поступления:" HorizontalAlignment="Left" Margin="220,77,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Год подачи:" HorizontalAlignment="Left" Margin="220,77,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Средний балл:" HorizontalAlignment="Left" Margin="360,78,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="(с) 2023 Created by GeorgeL." HorizontalAlignment="Left" Margin="20,558,0,0" VerticalAlignment="Top" Width="179"/>
         <Image HorizontalAlignment="Left" Height="102" Margin="835,24,0,0" VerticalAlignment="Top" Width="90" Source="MGUTU.jpg"/>
+        <TextBox HorizontalAlignment="Left" Margin="220,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21"/>
+        <TextBox HorizontalAlignment="Left" Margin="79,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21"/>
     </Grid>
 </Window>

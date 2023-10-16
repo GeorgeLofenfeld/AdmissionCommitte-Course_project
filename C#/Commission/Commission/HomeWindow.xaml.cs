@@ -83,7 +83,7 @@ namespace Commission
             while (reader_Statement.Read()) 
             {
                 model[i].specialtyCode = reader_Statement["Specialty_Code"].ToString();
-                model[i].dateOfStatement = (int)reader_Statement["Academic_year"];
+                model[i].dateOfStatement = reader_Statement["Academic_year"].ToString()?.TrimEnd('0', ':', '0', '0', ':', '0');
                 model[i].numberOfStatement = (int)reader_Statement["Statement_ID"];
                 i++;
             }
