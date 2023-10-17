@@ -12,48 +12,46 @@
         <DataGrid IsReadOnly="True" x:Name="HomeDataGrid" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserReorderColumns="False" CanUserSortColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" Margin="5,144,5,85" AutoGenerateColumns="False" IsSynchronizedWithCurrentItem="True" SelectionMode="Single" SelectionUnit="Cell">
             <DataGrid.Columns>
                 <DataGridTextColumn 
-                    Header="№" 
-                    IsReadOnly="True" Width="40" Binding="{Binding Path = number}"/>
-                <DataGridTextColumn 
                     Header="Фамилия" 
-                    IsReadOnly="True" Width="115" Binding="{Binding Path = lastName}"/>
+                    IsReadOnly="True" Width="120" Binding="{Binding Path = lastName}"/>
                 <DataGridTextColumn 
                     Header="Имя" 
-                    IsReadOnly="True" Width="115" Binding="{Binding Path = firstName}"/>
+                    IsReadOnly="True" Width="120" Binding="{Binding Path = firstName}"/>
                 <DataGridTextColumn 
                     Header="Отчество" 
-                    IsReadOnly="True" Width="115" Binding="{Binding Path = middleName}"/>
+                    IsReadOnly="True" Width="120" Binding="{Binding Path = middleName}"/>
                 <DataGridTextColumn 
                     Header="Дата рождения" 
-                    IsReadOnly="True" Width="106" Binding="{Binding Path = dateOfBirth}"/>
+                    IsReadOnly="True" Width="121" Binding="{Binding Path = dateOfBirth}"/>
                 <DataGridTextColumn 
                     Header="Код специальности" 
-                    IsReadOnly="True" Width="117" Binding="{Binding Path = specialtyCode}"/>
+                    IsReadOnly="True" Width="132" Binding="{Binding Path = specialtyCode}"/>
                 <DataGridTextColumn 
                     Header="Средний балл" 
-                    IsReadOnly="True" Width="90" Binding="{Binding Path = averageScore}"/>
+                    IsReadOnly="True" Width="95" Binding="{Binding Path = averageScore}"/>
                 <DataGridTextColumn 
                     Header="Дата подачи заявления" 
-                    IsReadOnly="True" Width="140" Binding="{Binding Path = dateOfStatement}"/>
+                    IsReadOnly="True" Width="145" Binding="{Binding Path = dateOfStatement}"/>
                 <DataGridTextColumn 
                     Header="Номер заявления" 
-                    IsReadOnly="True" Width="106" Binding="{Binding Path = numberOfStatement}"/>
+                    IsReadOnly="True" Width="111" Binding="{Binding Path = numberOfStatement}"/>
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Сохранить отчёт" HorizontalAlignment="Left" Margin="680,24,0,0" VerticalAlignment="Top" Height="40" Width="118"/>
-        <Button Content="Проходной балл, количество мест" HorizontalAlignment="Left" Margin="420,24,0,0" VerticalAlignment="Top" Height="40" Width="240"/>
-        <Button Content="Просмотр, редактирование, удаление" HorizontalAlignment="Left" Margin="160,24,0,0" VerticalAlignment="Top" Height="40" Width="240"/>
+        <Button Content="Изменить количество мест" HorizontalAlignment="Left" Margin="420,24,0,0" VerticalAlignment="Top" Height="40" Width="240"/>
+        <Button Content="Просмотр, редактирование, удаление" HorizontalAlignment="Left" Margin="160,24,0,0" VerticalAlignment="Top" Height="40" Width="240" Click="SearchButton"/>
         <Button Content="Добавить заявление" HorizontalAlignment="Left" Margin="20,24,0,0" VerticalAlignment="Top" Height="40" Width="118" Click="OpenAddingAStatement"/>
-        <Label Content="Фильтр:&#xD;&#xA;" HorizontalAlignment="Left" Margin="15,99,0,0" VerticalAlignment="Top" Height="25" Width="59"/>
-        <CheckBox IsChecked="True" Content="Бюджет" HorizontalAlignment="Left" Margin="500,106,0,0" VerticalAlignment="Top"/>
-        <CheckBox IsChecked="True" Content="Внебюджет" HorizontalAlignment="Left" Margin="582,106,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="360,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21"/>
+        <Label Content="Фильтр:&#xA;" HorizontalAlignment="Left" Margin="15,99,0,0" VerticalAlignment="Top" Height="25" Width="59"/>
         <Label Content="Специальность:" HorizontalAlignment="Left" Margin="79,77,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Год подачи:" HorizontalAlignment="Left" Margin="220,77,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Средний балл:" HorizontalAlignment="Left" Margin="360,78,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="(с) 2023 Created by GeorgeL." HorizontalAlignment="Left" Margin="20,558,0,0" VerticalAlignment="Top" Width="179"/>
         <Image HorizontalAlignment="Left" Height="102" Margin="835,24,0,0" VerticalAlignment="Top" Width="90" Source="MGUTU.jpg"/>
         <TextBox HorizontalAlignment="Left" Margin="220,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21"/>
         <TextBox HorizontalAlignment="Left" Margin="79,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="21"/>
+        <Label x:Name="countOfStatementsLabel" Content="[count of statements]" HorizontalAlignment="Left" Margin="410,558,0,0" VerticalAlignment="Top" Width="220" Height="26"/>
+        <Button Content="Обновить" HorizontalAlignment="Left" Margin="541,84,0,0" VerticalAlignment="Top" Height="40" Width="119"/>
+        <RadioButton Content="Бюджет" HorizontalAlignment="Left" Margin="360,114,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Внебюджет" HorizontalAlignment="Left" Margin="360,97,0,0" VerticalAlignment="Top"/>
+        <RadioButton IsChecked="True" Content="Все" HorizontalAlignment="Left" Margin="460,110,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

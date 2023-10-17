@@ -10,7 +10,13 @@
     <Compile Update="AddingAStatementWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ChangeStatementWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="HomeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SearchWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -18,10 +24,16 @@
     <Page Update="AddingAStatementWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="ChangeStatementWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="HomeWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SearchWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

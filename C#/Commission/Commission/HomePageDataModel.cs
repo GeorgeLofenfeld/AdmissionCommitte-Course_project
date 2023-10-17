@@ -12,7 +12,6 @@ namespace Commission
     /// </summary>
     public class HomePageDataModel
     {
-        public int number { get; set; }
         public string? lastName { get; set; }
         public string? firstName { get; set; }
         public string? middleName { get; set; }

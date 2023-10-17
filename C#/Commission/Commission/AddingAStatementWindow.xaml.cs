@@ -3,8 +3,11 @@ using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,6 +25,7 @@ namespace Commission
     /// </summary>
     public partial class AddingAStatementWindow : Window
     {
+        OpenFileDialog dialog = new OpenFileDialog();
         DataBase db = new();
         public AddingAStatementWindow()
         {
@@ -44,19 +48,18 @@ namespace Commission
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void choosePhoto(object sender, RoutedEventArgs e)
-        {
-            OpenFileDialog dialog = new OpenFileDialog();
+         public void choosePhoto(object sender, RoutedEventArgs e)
+         {
             dialog.Filter = "Файлы рисунков (*.png, *.jpg)|*.png;*.jpg";
             dialog.ShowDialog();
-            ApplicantImage.Source = new BitmapImage(new Uri(dialog.FileName));
+            if (dialog.FileName != "") ApplicantImage.Source = new BitmapImage(new Uri(dialog.FileName));
         }
         /// <summary>
         /// Кнопка сохранения данных в БД с их предварительной проверкой
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void SaveButton(object sender, RoutedEventArgs e)
+        public void SaveButton(object sender, RoutedEventArgs e)
         {
             string
                 lastName = lastNameTextBox.Text,
@@ -81,22 +84,25 @@ namespace Commission
                 }
             }
             readerForSpecialtiesCodes.Close();
-            if (flagForCorrectSpecialtyCode)
-            {
+            string datePattern = @"(0?[1-9]|[12][0-9]|3[01]).(0?[1-9]|1[012]).((19|20)\d\d)";
                 if (
                     lastName == "" || firstName == "" ||
-                    dateOfBirth == "" || sertificateId == "" ||
+                    !Regex.IsMatch(dateOfBirth, datePattern) || sertificateId == "" ||
                     placeOfEducation == "" || levelOfEducation == "" ||
-                    academicYear == ""
+                    !Regex.IsMatch(academicYear, datePattern) || !flagForCorrectSpecialtyCode
                     )
                 {
-                    MessageBox.Show("Некоторые строки пусты");
+                    MessageBox.Show("Введенны некорректные данные");
                 }
                 else
-                {
+                { 
                     int numberForApplicant = SearchFreeNumberForApplicantNumber();
                     int numberForStatement = SearchFreeNumberForStatementNumber();
-                    SqlCommand commandInsertApplicant = new SqlCommand($"INSERT INTO Applicants VALUES ('{numberForApplicant}','{lastName}', '{firstName}', '{middleName}', '{dateOfBirth}', 'NULL')", db.connection);
+                    if (dialog.FileName != "")
+                    {
+                        File.Copy(dialog.FileName, System.Environment.CurrentDirectory + $"/img/{numberForStatement}.jpg");
+                    }
+                    SqlCommand commandInsertApplicant = new SqlCommand($"INSERT INTO Applicants VALUES ('{numberForApplicant}','{lastName}', '{firstName}', '{middleName}', '{dateOfBirth}')", db.connection);
                     SqlCommand commandInsertCertificate = new SqlCommand($"INSERT INTO Certificates VALUES ('{sertificateId}','{numberForApplicant}', '{avarageScore}', '{placeOfEducation}', '{levelOfEducation}')", db.connection);
                     SqlCommand commandInsertStatement = new SqlCommand($"INSERT INTO Statements VALUES ('{numberForStatement}','{numberForApplicant}', '{specialtyCode}', '{academicYear}')", db.connection);
                     commandInsertApplicant.ExecuteNonQuery();
@@ -106,7 +112,6 @@ namespace Commission
                     Close();
                     homeWindow.ShowDialog();
                 }
-            } else MessageBox.Show("Некорректный код специальности");
         }
         /// <summary>
         /// Метод ищущий свободный номер в базе данных для номера заявления

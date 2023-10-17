@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -59,45 +60,28 @@ namespace Commission
         /// <param name="e"></param>
         private void GetData(object sender, RoutedEventArgs e)
         {
-            int i = 1;
             DataBase db = new();
-            SqlCommand command_Applicants = new SqlCommand("SELECT LastName, FirstName, MiddleName, dateOfBirth FROM Applicants", db.connection);
-            SqlDataReader reader_Applicants = command_Applicants.ExecuteReader();
+            SqlCommand command_GetData = new SqlCommand("SELECT LastName, FirstName, MiddleName, dateOfBirth, Specialty_Code, Avarage_Score, Academic_year, Statement_ID FROM Applicants INNER JOIN Statements ON Applicants.Applicant_ID = Statements.Applicant_ID INNER JOIN Certificates ON Applicants.Applicant_ID = Certificates.Applicant_ID", db.connection);
+            SqlDataReader reader_GetData = command_GetData.ExecuteReader();
             model = new BindingList<HomePageDataModel>() { };
-            while (reader_Applicants.Read())
+            while (reader_GetData.Read())
             {
                 model.Add(new HomePageDataModel()
-                {
-                    number = i,
-                    lastName = reader_Applicants["LastName"].ToString(),
-                    firstName = reader_Applicants["FirstName"].ToString(),
-                    middleName = reader_Applicants["MiddleName"].ToString(),
-                    dateOfBirth = reader_Applicants["dateOfBirth"]?.ToString()?.TrimEnd('0', ':', '0', '0', ':', '0'),
-                }   );
-                i++;
+                { 
+                    lastName = reader_GetData["LastName"].ToString(),
+                    firstName = reader_GetData["FirstName"].ToString(),
+                    middleName = reader_GetData["MiddleName"].ToString(),
+                    dateOfBirth = reader_GetData["dateOfBirth"]?.ToString()?.TrimEnd('0', ':', '0', '0', ':', '0'),
+                    specialtyCode = reader_GetData["Specialty_Code"].ToString(),
+                    averageScore = (double)reader_GetData["Avarage_Score"],
+                    dateOfStatement = reader_GetData["Academic_year"].ToString()?.TrimEnd('0', ':', '0', '0', ':', '0'),
+                    numberOfStatement = (int)reader_GetData["Statement_ID"],
+            }   );
             }
-            reader_Applicants.Close();
-            i = 0;
-            SqlCommand command_Statement = new SqlCommand("SELECT Statement_ID, Specialty_Code, Academic_year FROM Statements", db.connection);
-            SqlDataReader reader_Statement = command_Statement.ExecuteReader();
-            while (reader_Statement.Read()) 
-            {
-                model[i].specialtyCode = reader_Statement["Specialty_Code"].ToString();
-                model[i].dateOfStatement = reader_Statement["Academic_year"].ToString()?.TrimEnd('0', ':', '0', '0', ':', '0');
-                model[i].numberOfStatement = (int)reader_Statement["Statement_ID"];
-                i++;
-            }
-            reader_Statement.Close();
-            i = 0;
-            SqlCommand command_Certificates = new SqlCommand("SELECT Avarage_Score FROM Certificates", db.connection);
-            SqlDataReader reader_Certificates = command_Certificates.ExecuteReader();
-            while (reader_Certificates.Read())
-            {
-                model[i].averageScore = (double)reader_Certificates["Avarage_Score"];
-                i++;
-            }
-            reader_Certificates.Close();
-            HomeDataGrid.ItemsSource = model;
+            reader_GetData.Close();
+            var sorted_model = model.OrderByDescending(x => x.averageScore).ToList();
+            HomeDataGrid.ItemsSource = sorted_model;
+            countOfStatementsLabel.Content = $"Количество заявлений: {sorted_model.Count}";
         }
 
         /// <summary>
@@ -110,6 +94,13 @@ namespace Commission
             AddingAStatementWindow addingAStatementWindow = new();
             Close();
             addingAStatementWindow.ShowDialog();
+        }
+
+        private void SearchButton(object sender, RoutedEventArgs e)
+        {
+            SearchWindow searchWindow = new SearchWindow();
+            Close();
+            searchWindow.ShowDialog();
         }
     }
 }

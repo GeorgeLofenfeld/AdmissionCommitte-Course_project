@@ -8,9 +8,9 @@
         Title="Авторизация" Height="640" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button Content="Войти" HorizontalAlignment="Center" Margin="0,345,0,0" VerticalAlignment="Top" Width="160" Height="40" Click="Auth_btn"/>
-        <PasswordBox x:Name="textbox_password" HorizontalAlignment="Center" Margin="0,305,0,0" VerticalAlignment="Top" Width="160" Password="adm_123"/>
+        <PasswordBox MaxLength="24" x:Name="textbox_password" HorizontalAlignment="Center" Margin="0,305,0,0" VerticalAlignment="Top" Width="160" Password="adm123"/>
         <Label Content="Пароль" HorizontalAlignment="Center" Margin="0,265,0,0" VerticalAlignment="Top" Width="160" Height="40"/>
-        <TextBox x:Name="textbox_login" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="20" Background="White" Margin="0,225,0,0" Text="Admin"/>
+        <TextBox MaxLength="24" x:Name="textbox_login" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="20" Background="White" Margin="0,225,0,0" Text="Admin"/>
         <Label Content="Логин" HorizontalAlignment="Center" Margin="0,185,0,0" VerticalAlignment="Top" Width="160" Height="40"/>
         <Label Content="Version 1.0, last update 16.10.2023" HorizontalAlignment="Left" Margin="730,565,0,0" VerticalAlignment="Top" Width="220" Height="40"/>
         <Label Content="Приёмная комиссия" HorizontalAlignment="Center" Margin="0,63,0,0" VerticalAlignment="Top" Width="320" FontSize="33" Height="77"/>
