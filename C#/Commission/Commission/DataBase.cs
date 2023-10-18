@@ -16,7 +16,7 @@ namespace Commission
         /// <summary>
         /// Свойство подключения
         /// </summary>
-        public SqlConnection connection = new SqlConnection("Data Source = localhost\\SQLEXPRESS01;\nInitial Catalog = Commission;\nIntegrated Security = true\n");
+        public SqlConnection connection = new SqlConnection("Data Source = localhost\\SQLEXPRESS;\nInitial Catalog = Commission;\nIntegrated Security = true\n");
         /// <summary>
         /// Конструктор класса, открывающий  подключение
         /// </summary>

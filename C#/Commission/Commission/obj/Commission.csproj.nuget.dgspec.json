@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\desktop\\College\\ПЕРЕСДАЧИ ЗА 6 семестр\\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\\C#\\Commission\\Commission\\Commission.csproj": {}
+    "C:\\Users\\фвьшт\\Desktop\\Котик тебя очень любит\\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\\C#\\Commission\\Commission\\Commission.csproj": {}
   },
   "projects": {
-    "D:\\desktop\\College\\ПЕРЕСДАЧИ ЗА 6 семестр\\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\\C#\\Commission\\Commission\\Commission.csproj": {
+    "C:\\Users\\фвьшт\\Desktop\\Котик тебя очень любит\\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\\C#\\Commission\\Commission\\Commission.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\desktop\\College\\ПЕРЕСДАЧИ ЗА 6 семестр\\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\\C#\\Commission\\Commission\\Commission.csproj",
+        "projectUniqueName": "C:\\Users\\фвьшт\\Desktop\\Котик тебя очень любит\\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\\C#\\Commission\\Commission\\Commission.csproj",
         "projectName": "Commission",
-        "projectPath": "D:\\desktop\\College\\ПЕРЕСДАЧИ ЗА 6 семестр\\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\\C#\\Commission\\Commission\\Commission.csproj",
-        "packagesPath": "C:\\Users\\georg\\.nuget\\packages\\",
-        "outputPath": "D:\\desktop\\College\\ПЕРЕСДАЧИ ЗА 6 семестр\\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\\C#\\Commission\\Commission\\obj\\",
+        "projectPath": "C:\\Users\\фвьшт\\Desktop\\Котик тебя очень любит\\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\\C#\\Commission\\Commission\\Commission.csproj",
+        "packagesPath": "C:\\Users\\фвьшт\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\фвьшт\\Desktop\\Котик тебя очень любит\\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\\C#\\Commission\\Commission\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\georg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\фвьшт\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
