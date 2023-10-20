@@ -50,9 +50,23 @@ namespace Commission
         /// <param name="e"></param>
          public void choosePhoto(object sender, RoutedEventArgs e)
          {
+
             dialog.Filter = "Файлы рисунков (*.png, *.jpg)|*.png;*.jpg";
             dialog.ShowDialog();
-            if (dialog.FileName != "") ApplicantImage.Source = new BitmapImage(new Uri(dialog.FileName));
+            if (dialog.FileName != "")
+            {
+
+                using (var file = File.OpenRead(dialog.FileName))
+                {
+                    BitmapImage image = new BitmapImage();
+                    image.BeginInit();
+                    Uri imageSource = new Uri(dialog.FileName);
+                    image.UriSource = imageSource;
+                    image.EndInit();
+                    ApplicantImage.Source = image;
+                    file.Close();
+                }
+            }
         }
         /// <summary>
         /// Кнопка сохранения данных в БД с их предварительной проверкой

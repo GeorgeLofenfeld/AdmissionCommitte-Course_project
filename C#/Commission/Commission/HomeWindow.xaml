@@ -37,8 +37,8 @@
                     IsReadOnly="True" Width="111" Binding="{Binding Path = numberOfStatement}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Сохранить отчёт" HorizontalAlignment="Left" Margin="680,24,0,0" VerticalAlignment="Top" Height="40" Width="118"/>
-        <Button Content="Изменить количество мест" HorizontalAlignment="Left" Margin="420,24,0,0" VerticalAlignment="Top" Height="40" Width="240"/>
+        <Button Content="Сохранить отчёт" HorizontalAlignment="Left" Margin="680,24,0,0" VerticalAlignment="Top" Height="40" Width="118" Click="Report_Button"/>
+        <Button Content="Просмотр, изменение количества мест" HorizontalAlignment="Left" Margin="420,24,0,0" VerticalAlignment="Top" Height="40" Width="240" Click="ChangeCountOfSpecialtyButton"/>
         <Button Content="Просмотр, редактирование, удаление" HorizontalAlignment="Left" Margin="160,24,0,0" VerticalAlignment="Top" Height="40" Width="240" Click="SearchButton"/>
         <Button Content="Добавить заявление" HorizontalAlignment="Left" Margin="20,24,0,0" VerticalAlignment="Top" Height="40" Width="118" Click="OpenAddingAStatement"/>
         <Label Content="Фильтр:&#xA;" HorizontalAlignment="Left" Margin="15,99,0,0" VerticalAlignment="Top" Height="25" Width="59"/>

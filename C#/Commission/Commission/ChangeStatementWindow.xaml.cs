@@ -16,6 +16,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Net.Mail;
+using System.Diagnostics;
 
 namespace Commission
 {
@@ -44,11 +46,22 @@ namespace Commission
                 levelofEducationTextBox.Text = choiseCurrentStatement_reader["Level_of_education"].ToString();
                 certificateIdTextBox.Text = choiseCurrentStatement_reader["Certificate_ID"].ToString();
                 numberOsStatementLabel.Content = $"Номер заявления: {currentStatementNumber}";
-                if (File.Exists(System.Environment.CurrentDirectory + $"/img/{currentStatementNumber}.jpg"))
-                {
-                    ApplicantImage.Source = new BitmapImage(new Uri(System.Environment.CurrentDirectory + $"/img/{currentStatementNumber}.jpg"));
-                }
             }
+            if (File.Exists(System.Environment.CurrentDirectory + $"/img/{currentStatementNumber}.jpg"))
+            {
+                using (var file = File.OpenRead(System.Environment.CurrentDirectory + $"/img/{currentStatementNumber}.jpg"))
+                {
+                    BitmapImage image = new BitmapImage();
+                    image.BeginInit();
+                    Uri imageSource = new Uri(System.Environment.CurrentDirectory + $"/img/{currentStatementNumber}.jpg");
+                    image.UriSource = imageSource;
+                    image.CacheOption = BitmapCacheOption.OnLoad;
+                    image.StreamSource = file;
+                    image.EndInit();
+                    ApplicantImage.Source = image;
+                    file.Close();
+                }
+            };
             choiseCurrentStatement_reader.Close();
         }
         /// <summary>
@@ -71,17 +84,29 @@ namespace Commission
         {
             dialog.Filter = "Файлы рисунков (*.png, *.jpg)|*.png;*.jpg";
             dialog.ShowDialog();
-            if (dialog.FileName != "") ApplicantImage.Source = new BitmapImage(new Uri(dialog.FileName));
+            if (dialog.FileName != "")
+            {
+                using (var file = File.OpenRead(dialog.FileName))
+                {
+                    BitmapImage image = new BitmapImage();
+                    image.BeginInit();
+                    Uri imageSource = new Uri(dialog.FileName);
+                    image.UriSource = imageSource;
+                    image.EndInit();
+                    ApplicantImage.Source = image;
+                    file.Close();
+                }
+            }
         }
 
         private void DeleteStatement_Button(object sender, RoutedEventArgs e)
         {
             var result = MessageBox.Show("Вы точно хотите удалить запись?", "", MessageBoxButton.YesNo, MessageBoxImage.Warning);
             int currentApplicantId = 0;
+            string str = (string)numberOsStatementLabel.Content;
+            string currentNumber = new string(str.Where(t => char.IsDigit(t)).ToArray());
             if (result == MessageBoxResult.Yes)
             {
-                string str = (string)numberOsStatementLabel.Content;
-                string currentNumber = new string(str.Where(t => char.IsDigit(t)).ToArray());
                 SqlCommand selectCurrentApplicantIdCommand = new SqlCommand($"SELECT Applicant_ID FROM Statements WHERE Statement_ID = {currentNumber}", db.connection);
                 SqlDataReader selectCurrentApplicantIdReader = selectCurrentApplicantIdCommand.ExecuteReader();
                 while (selectCurrentApplicantIdReader.Read())
@@ -91,11 +116,11 @@ namespace Commission
                 selectCurrentApplicantIdReader.Close();
                 SqlCommand deleteStatementCommand = new SqlCommand($"DELETE FROM Certificates WHERE Applicant_ID = {currentApplicantId}; DELETE FROM Statements WHERE Applicant_ID = {currentApplicantId}; DELETE FROM Applicants WHERE Applicant_ID = {currentApplicantId}", db.connection);
                 deleteStatementCommand.ExecuteNonQuery();
-                if (File.Exists(System.Environment.CurrentDirectory + $"/img/{currentNumber}.jpg")) File.Delete(System.Environment.CurrentDirectory + $"/img/{currentNumber}.jpg");
                 HomeWindow homeWindow = new HomeWindow();
                 Close();
                 homeWindow.ShowDialog();
             }
+
         }
 
         private void SaveStatementChangeButton(object sender, RoutedEventArgs e)
@@ -126,17 +151,19 @@ namespace Commission
                 lastName == "" || firstName == "" ||
                 !Regex.IsMatch(dateOfBirth, datePattern) || sertificateId == "" ||
                 placeOfEducation == "" || levelOfEducation == "" ||
-                !Regex.IsMatch(academicYear, datePattern) 
+                !Regex.IsMatch(academicYear, datePattern)
                 )
             {
                 MessageBox.Show("Введенны некорректные данные");
             }
             else
             {
-                if (dialog.FileName != "" && !File.Exists(dialog.FileName))
+        
+                if (dialog.FileName != "")
                 {
-                    File.Copy(dialog.FileName, System.Environment.CurrentDirectory + $"/img/{numberOsStatementLabel}.jpg");
-                }
+                    File.Delete(System.Environment.CurrentDirectory + $"/img/{currentNumber}.jpg");
+                    File.Copy(dialog.FileName, System.Environment.CurrentDirectory + $"/img/{currentNumber}.jpg");
+                };
                 SqlCommand commandUpdateApplicant = new SqlCommand($"UPDATE Applicants SET LastName='{lastName}', FirstName='{firstName}', MiddleName='{middleName}', dateOfBirth='{dateOfBirth}' WHERE Applicant_ID='{currentApplicantId}'", db.connection);
                 SqlCommand commandUpdateCertificate = new SqlCommand($"UPDATE Certificates SET Certificate_ID='{sertificateId}', Avarage_Score='{avarageScore}', Place_of_education='{placeOfEducation}', Level_of_education='{levelOfEducation}' WHERE Applicant_ID='{currentApplicantId}'", db.connection);
                 SqlCommand commandUpdateStatement = new SqlCommand($"UPDATE Statements SET Specialty_Code='{specialtyCode}', Academic_year='{academicYear}' WHERE Applicant_ID='{currentApplicantId}'", db.connection);
@@ -150,7 +177,3 @@ namespace Commission
         }
     }
 }
-
-// Добавить кнопку удаления фото
-// При изменении фото - предыдущее удалить, новое установить 
-// ругается на avarageScore в запросе

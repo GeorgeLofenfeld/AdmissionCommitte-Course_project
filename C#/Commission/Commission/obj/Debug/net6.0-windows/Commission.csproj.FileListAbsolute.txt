@@ -78,3 +78,5 @@ C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсо
 C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.pdb
 C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.genruntimeconfig.cache
 C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ref\Commission.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ChangeSpecialtyCount.g.cs
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ChangeSpecialtyCount.baml

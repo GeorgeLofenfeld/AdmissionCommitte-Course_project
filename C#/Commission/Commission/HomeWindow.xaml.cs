@@ -102,5 +102,151 @@ namespace Commission
             Close();
             searchWindow.ShowDialog();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ChangeCountOfSpecialtyButton(object sender, RoutedEventArgs e)
+        {
+            ChangeSpecialtyCount changeSpecialtyCount = new();
+            Close();
+            changeSpecialtyCount.ShowDialog();
+        }
+
+        private void Report_Button(object sender, RoutedEventArgs e)
+        {
+            BindingList<ChangeCountOfSpecialtyesDataModel>? model_changeCount;
+            DataBase db = new();
+            SqlCommand selectCommand = new SqlCommand($"SELECT * FROM Specialties", db.connection);
+            SqlDataReader readerSelectCommand = selectCommand.ExecuteReader();
+            model_changeCount = new BindingList<ChangeCountOfSpecialtyesDataModel>() { };
+            while (readerSelectCommand.Read())
+            {
+                model_changeCount?.Add(new ChangeCountOfSpecialtyesDataModel()
+                {
+                    Specialty_Code = readerSelectCommand["Specialty_Code"].ToString(),
+                    Budget_places = readerSelectCommand["Budget_places"].ToString(),
+                    Extra_budgetary_places = readerSelectCommand["Extra_budgetary_places"].ToString()
+                }
+                );
+            }
+            readerSelectCommand.Close();
+            if (!File.Exists(System.Environment.CurrentDirectory + "/report.txt")) File.Delete(System.Environment.CurrentDirectory + "/report.txt");
+            FileInfo fi1 = new FileInfo(System.Environment.CurrentDirectory + "/report.txt");
+
+
+            string? Budget_places_03 = "";
+            string? Extra_budgetary_places_03 = "";
+            SqlCommand selectCommandForCountOfSpecialtyPlacesCount_03 = new SqlCommand($"SELECT Budget_places, Extra_budgetary_places FROM Specialties WHERE Specialty_Code='09.02.03'", db.connection);
+            SqlDataReader readerSpecialtyPlacesCount_03 = selectCommandForCountOfSpecialtyPlacesCount_03.ExecuteReader();
+            while (readerSpecialtyPlacesCount_03.Read())
+            {
+                Budget_places_03 = readerSpecialtyPlacesCount_03["Budget_places"].ToString();
+                Extra_budgetary_places_03 = readerSpecialtyPlacesCount_03["Extra_budgetary_places"].ToString();
+            };
+            readerSpecialtyPlacesCount_03.Close();
+
+            string? Budget_places_07 = "";
+            string? Extra_budgetary_places_07 = "";
+            SqlCommand selectCommandForCountOfSpecialtyPlacesCount_07 = new SqlCommand($"SELECT Budget_places, Extra_budgetary_places FROM Specialties WHERE Specialty_Code='09.02.07'", db.connection);
+            SqlDataReader readerSpecialtyPlacesCount_07 = selectCommandForCountOfSpecialtyPlacesCount_07.ExecuteReader();
+            while (readerSpecialtyPlacesCount_07.Read())
+            {
+                Budget_places_07 = readerSpecialtyPlacesCount_07["Budget_places"].ToString();
+                Extra_budgetary_places_07 = readerSpecialtyPlacesCount_07["Extra_budgetary_places"].ToString();
+            };
+            readerSpecialtyPlacesCount_07.Close();
+
+
+
+            using (StreamWriter sw = fi1.CreateText())
+            {
+                sw.WriteLine("ОТЧЁТ О ПРОШЕДШИХ АБИТУРИЕНТАХ");
+                sw.WriteLine();
+                int.TryParse(Budget_places_03, out int int_Budget_places_03);
+                int.TryParse(Extra_budgetary_places_03, out int int_Extra_budgetary_places_03);
+                int i = 0;
+                if (model != null)
+                {
+                    var sorted_model = model.OrderByDescending(x => x.averageScore).ToList();
+                    sw.WriteLine("БЮДЖЕТ 09.02.03");
+                    foreach (var s in sorted_model)
+                    {
+                        if (s.specialtyCode == "09.02.03")
+                        {
+                            sw.WriteLine($"Фамилия: {s.lastName}, имя: {s.firstName}, отчество: {s.middleName}, балл: {s.averageScore}, номер заявления: {s.numberOfStatement}");
+                            i++;
+                            if (i == int_Budget_places_03)
+                            {
+                                sw.WriteLine();
+                                break;
+                            }
+                        }
+                    }
+                    i = 0;
+                    sw.WriteLine("ВНЕБЮДЖЕТ 09.02.03");
+                    foreach (var s in sorted_model)
+                    {
+                        if (s.specialtyCode == "09.02.03")
+                        {
+                            sw.WriteLine($"Фамилия: {s.lastName}, имя: {s.firstName}, отчество: {s.middleName}, балл: {s.averageScore}, номер заявления: {s.numberOfStatement}");
+                            i++;
+                            if (i == int_Extra_budgetary_places_03)
+                            {
+                                sw.WriteLine();
+                                break;
+                            }
+                        }
+                    }
+                    i = 0;
+                    int.TryParse(Budget_places_07, out int int_Budget_places_07);
+                    //
+                    sw.WriteLine("БЮДЖЕТ 09.02.07");
+                    foreach (var s in sorted_model)
+                    {
+                        if (s.specialtyCode == "09.02.07")
+                        {
+                            sw.WriteLine($"Фамилия: {s.lastName}, имя: {s.firstName}, отчество: {s.middleName}, балл: {s.averageScore}, номер заявления: {s.numberOfStatement}");
+                            i++;
+                            if (i == int_Budget_places_07)
+                            {
+                                sw.WriteLine();
+                                break;
+                            }
+
+                        }
+                    }
+                    i = 0;
+                    //
+                    int.TryParse(Extra_budgetary_places_07, out int int_Extra_budgetary_places_07);
+                    sw.WriteLine("ВНЕБЮДЖЕТ 09.02.07");
+                    foreach (var s in sorted_model)
+                    {
+                        if (s.specialtyCode == "09.02.07")
+                        {
+                            sw.WriteLine($"Фамилия: {s.lastName}, имя: {s.firstName}, отчество: {s.middleName}, балл: {s.averageScore}, номер заявления: {s.numberOfStatement}");
+                            i++;
+                            if (i == int_Extra_budgetary_places_07)
+                            {
+                                sw.WriteLine();
+                                break;
+                            }
+
+                        }
+                    }
+                    i = 0;
+                }
+            }
+            if (File.Exists(System.Environment.CurrentDirectory + "/report.txt"))
+            {
+                MessageBox.Show("Файл сохранен");
+            }
+            else
+            {
+                MessageBox.Show("Ошибка, файл не сохранен");
+            }
+        }
     }
 }
