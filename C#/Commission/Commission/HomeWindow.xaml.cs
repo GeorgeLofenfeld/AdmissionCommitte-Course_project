@@ -168,6 +168,7 @@ namespace Commission
                 int.TryParse(Budget_places_03, out int int_Budget_places_03);
                 int.TryParse(Extra_budgetary_places_03, out int int_Extra_budgetary_places_03);
                 int i = 0;
+                bool flag = false;
                 if (model != null)
                 {
                     var sorted_model = model.OrderByDescending(x => x.averageScore).ToList();
@@ -180,11 +181,15 @@ namespace Commission
                             i++;
                             if (i == int_Budget_places_03)
                             {
+                                sw.WriteLine($"Проходной балл: {s.averageScore}");
+                                flag = true;
                                 sw.WriteLine();
                                 break;
-                            }
+                            } 
                         }
                     }
+                    if (!flag) sw.WriteLine("Проходной балл: Любой выше 3.0 включительно");
+                    flag = false;
                     i = 0;
                     sw.WriteLine("ВНЕБЮДЖЕТ 09.02.03");
                     foreach (var s in sorted_model)
@@ -195,14 +200,17 @@ namespace Commission
                             i++;
                             if (i == int_Extra_budgetary_places_03)
                             {
+                                sw.WriteLine($"Проходной балл: {s.averageScore}");
+                                flag = true;
                                 sw.WriteLine();
                                 break;
-                            }
+                            } 
                         }
                     }
+                    if (!flag) sw.WriteLine("Проходной балл: Любой выше 3.0 включительно");
+                    flag = false;
                     i = 0;
                     int.TryParse(Budget_places_07, out int int_Budget_places_07);
-                    //
                     sw.WriteLine("БЮДЖЕТ 09.02.07");
                     foreach (var s in sorted_model)
                     {
@@ -212,14 +220,17 @@ namespace Commission
                             i++;
                             if (i == int_Budget_places_07)
                             {
+                                sw.WriteLine($"Проходной балл: {s.averageScore}");
+                                flag = true;
                                 sw.WriteLine();
                                 break;
                             }
 
                         }
                     }
+                    if (!flag) sw.WriteLine("Проходной балл: Любой выше 3.0 включительно");
+                    flag = false;
                     i = 0;
-                    //
                     int.TryParse(Extra_budgetary_places_07, out int int_Extra_budgetary_places_07);
                     sw.WriteLine("ВНЕБЮДЖЕТ 09.02.07");
                     foreach (var s in sorted_model)
@@ -230,12 +241,16 @@ namespace Commission
                             i++;
                             if (i == int_Extra_budgetary_places_07)
                             {
+                                sw.WriteLine($"Проходной балл: {s.averageScore}");
+                                flag = true;
                                 sw.WriteLine();
                                 break;
-                            }
+                            } 
 
                         }
                     }
+                    if (!flag) sw.WriteLine("Проходной балл: Любой выше 3.0 включительно");
+                    flag = false;
                     i = 0;
                 }
             }
