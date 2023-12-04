@@ -1,0 +1,18 @@
+﻿<Window x:Class="Commission.SearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Commission"
+        mc:Ignorable="d"
+        Title="Окно поиска" Height="640" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="102" Margin="835,24,0,0" VerticalAlignment="Top" Width="90" Source="/MGUTU.jpg"/>
+        <Label Content="(с) 2023 Created by GeorgeL." HorizontalAlignment="Left" Margin="20,558,0,0" VerticalAlignment="Top" Width="179"/>
+        <Button Content="Отменить" HorizontalAlignment="Left" Margin="857,544,0,0" VerticalAlignment="Top" Height="40" Width="83" Click="Cansel_button"/>
+        <Label Content="Введите номер заявления: " HorizontalAlignment="Left" Margin="400,198,0,0" VerticalAlignment="Top" Width="160"/>
+        <TextBox MaxLength="4" x:Name="statementNumberTextBox" HorizontalAlignment="Left" Margin="400,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <Button Content="Найти" HorizontalAlignment="Left" Margin="438,284,0,0" VerticalAlignment="Top" Height="40" Width="84" Click="EnterStatementNumberButton"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,124 @@
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.exe
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.deps.json
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.runtimeconfig.json
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.dll
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.pdb
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.csproj.AssemblyReference.cache
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\App.g.cs
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission_MarkupCompile.cache
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission_MarkupCompile.lref
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\MainWindow.baml
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.g.resources
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.GeneratedMSBuildEditorConfig.editorconfig
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.AssemblyInfoInputs.cache
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.AssemblyInfo.cs
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.csproj.CoreCompileInputs.cache
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.dll
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\refint\Commission.dll
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.pdb
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.genruntimeconfig.cache
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ref\Commission.dll
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.csproj.CopyComplete
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\HomeWindow.g.cs
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\HomeWindow.baml
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\AddingAStatementWindow.g.cs
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\AddingAStatementWindow.baml
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\SearchWindow.g.cs
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\SearchWindow.baml
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ChangeStatementWindow.g.cs
+D:\desktop\College\ПЕРЕСДАЧИ ЗА 6 семестр\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ChangeStatementWindow.baml
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.exe
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.deps.json
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.runtimeconfig.json
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.pdb
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.csproj.AssemblyReference.cache
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\AddingAStatementWindow.g.cs
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ChangeStatementWindow.g.cs
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\HomeWindow.g.cs
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\SearchWindow.g.cs
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission_MarkupCompile.cache
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission_MarkupCompile.lref
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\AddingAStatementWindow.baml
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ChangeStatementWindow.baml
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\HomeWindow.baml
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\SearchWindow.baml
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.g.resources
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.AssemblyInfoInputs.cache
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.AssemblyInfo.cs
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.csproj.CoreCompileInputs.cache
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.csproj.CopyComplete
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\refint\Commission.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.pdb
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.genruntimeconfig.cache
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ref\Commission.dll
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ChangeSpecialtyCount.g.cs
+C:\Users\фвьшт\Desktop\Котик тебя очень любит\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ChangeSpecialtyCount.baml
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.exe
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.deps.json
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.runtimeconfig.json
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.dll
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Commission.pdb
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.csproj.AssemblyReference.cache
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\AddingAStatementWindow.g.cs
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ChangeSpecialtyCount.g.cs
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ChangeStatementWindow.g.cs
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\HomeWindow.g.cs
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\SearchWindow.g.cs
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission_MarkupCompile.cache
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission_MarkupCompile.lref
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\AddingAStatementWindow.baml
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ChangeSpecialtyCount.baml
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ChangeStatementWindow.baml
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\HomeWindow.baml
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\SearchWindow.baml
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.g.resources
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.AssemblyInfoInputs.cache
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.AssemblyInfo.cs
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.csproj.CoreCompileInputs.cache
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.csproj.CopyComplete
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.dll
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\refint\Commission.dll
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.pdb
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\Commission.genruntimeconfig.cache
+C:\Users\фвьшт\Desktop\Георгий Л\Курсовой проект. Разработка информационной системы приёмной комиссии колледжа\C#\Commission\Commission\obj\Debug\net6.0-windows\ref\Commission.dll
